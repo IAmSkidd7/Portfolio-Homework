@@ -1,3 +1,8 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
 li, a, button{
     font-family: 'montserrat', sans-serif;
     font-weight: 500;
@@ -13,6 +18,7 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: #B26E63;
+    padding: 50px 20px
 }
 
 .headshot{
@@ -74,9 +80,13 @@ main{
 #paragraph{
     display: flex;
     justify-content: center;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+
 }
 
-h2{
+h2 {
     padding: 20px 50px;
     display: flex;
     justify-content: center;
@@ -88,9 +98,27 @@ h2{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-     height: 450px; 
+     height: 450px;
+     padding-top: 100px; 
 }
  
+.project-2, .project-3{
+    background-color: #B26E63;
+    border: solid black;
+    transition:  253ms ease-out;
+    padding: 100px 100px;
+    margin-top: 100px;
+    width: 300px;
+}
+
+.project-2:hover{
+    background-image: url(./Images/clean-code.png);
+    transition: all 1000ms ease-out;
+}
+
+#main-project{
+    background-image: url(./);
+}
 
 #main-project{
     display: inline;
@@ -99,15 +127,17 @@ h2{
     background-color: #B26E63; 
     border-style: dotted;
     padding: 100px 500px;
+    border: solid black;
 }
 
+
+
 .small-projects{
+    padding-top: 50px;
     display: flex;
     flex-direction: row;
-    
     align-items: center;
-    justify-content: center;
-     padding: 20px 20px;   
+    justify-content: space-between;   
     /* background-color: #B26E63; */
 }
     
