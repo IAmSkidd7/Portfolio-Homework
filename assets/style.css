@@ -1,8 +1,9 @@
+/*CSS reset */
 *{
     padding: 0%;
     margin: 0%;
 }
-
+/* Added styling to my list, anchor and button */
 li, a, button{
     font-family: 'montserrat', sans-serif;
     font-weight: 500;
@@ -11,7 +12,7 @@ li, a, button{
     text-decoration: none;
     background-color: #B26E63;
 }
-
+/* Added styling to header */
 header{
     font-family: 'montserrat',sans-serif;
     display: flex;
@@ -34,6 +35,7 @@ p{
 }
 
 body{
+    overflow-x: hidden;
     background-color: #CDD7D6;
 }
 
@@ -47,9 +49,15 @@ h1{
     list-style: none;
 }
 
+ul{
+    text-align: center;
+}
+
 .nav-links li{
     display: inline-block;
     padding: 0px 20px;
+    text-align: center;
+    padding-left: 20px;
 }
 
 .nav-links li a{
@@ -70,11 +78,11 @@ button{
     margin-left: 20px;
     padding: 15px;
 }
-
+/* Added hover effect to contact me button */
 button:hover{
     background-color:rgba(0, 136, 169, 0.5); 
 }
-
+/* added display flex to main element */
 main{
     display: flex;
     flex-direction: column;
@@ -84,50 +92,92 @@ main{
     justify-content: center;
     font-family: 'montserrat', sans-serif;
     text-align: center;
-    /* width: auto; */
+    color: #000;
 }
-
+/* added styling and display features to section-1 class */
 .section-1{
     display: flex;
     flex-direction: row;
     justify-content: center;
     border: solid #B26E63;
-    padding: 25px;
+    padding-top: 75px;
+    padding-bottom: 75px;
     margin: 100px;
+    transition: all 0.3s ease 0s;
+    color: #000;
 }
-
+/* created hover state and styled for main project */
 .section-1:hover{
     background-color:rgba(0, 136, 169, 1);
     border: none;
-    border-radius: 50px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
-    padding: 15px;
+    border: dotted rgba(0, 136, 169, 1);
 }
-
+/* Created section 2 as a container for smaller projects */
 .section-2{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
+/* created styling for small projects */
 .small-projects{
     display: flex;
     flex-direction: row;
     justify-content: center;
     border: solid #B26E63;
-    padding: 100px;
-    width: 31%;
+    padding: 75px;
+    width: 33%;
     transition: 0.3s ease;
+    background-color: #CDD7D6;
+    color: #000;
+    margin-top: 25px;
 }
-
+/* added hover state to smaller projects */
 .small-projects:hover{
     background-color:rgba(0, 136, 169, 1);
     border: none;
-    border-radius: 50px;
+    border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    padding: 50px;
     text-align: center;
+    border: dotted rgba(0, 136, 169, 1);
+}
+/* styled footer */
+footer{
+    margin-top: 25px;
+    font-family: 'montserrat', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #B26E63;
+    padding: 50px;
+}
+footer h2{
+    font-family: 'montserrat', sans-serif;
+}
+#contact-me{
+    display: block;
+    flex-direction: column;
+    font-size: 24px;
+    font-family: 'Monserrat', sans-serif;
+    text-align: center;
+}
+
+.icons{
+    height:40px;
+    width:40px;
+    padding: 10px;
+}
+/* made accesible for smaller screen sizes */
+@media only screen and (max-width:930px){
+    header{
+        font-size: 30px;
+    }
+    ul{
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+    }
 }

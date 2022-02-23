@@ -14,32 +14,40 @@
 
 <body>
     <header>
-        <h1>Baron's Portfolio</h1>
+        <!-- added id to h1 to allow for returning to top of page from the bottom -->
+        <h1 id="home">Baron's Portfolio</h1>
         <nav class="buttons">
+            <!-- used ul to organize my nav at the top of the page -->
             <ul class="nav-links">
                 <li><a href="#about-me">About Me</a></li>
                 <li><a href="#project-link">Projects</a></li>
+                <a class="cta" href="#contact-me"><button>Contact Me</button></a>
             </ul>
         </nav>
-        <a class="cta" href="#"><button>Contact Me</button></a>
+
     </header>
     <main>
-        <img class="headshot" src="https://via.placeholder.com/400" alt="Baron Skidmore headshot">
-        <h2>About me</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate saepe, ex quam atque quod alias
-            doloribus id similique quibusdam corporis inventore, repudiandae cumque fugiat non earum obcaecati
-            praesentium et, rem pariatur ad dignissimos. Beatae, voluptates nihil perferendis quam delectus quae sunt
-            reprehenderit incidunt ut recusandae quisquam. Veritatis aperiam eligendi earum, ad modi dignissimos
-            molestiae, cupiditate est voluptas aliquid incidunt autem error voluptatibus ea consectetur et possimus,
-            necessitatibus reprehenderit tenetur enim. Voluptatem, quae. Reprehenderit, delectus. Commodi.</p>
-        <h2>Projects</h2>
+        <!-- added photo of myself -->
+        <img class="headshot" src="./assets/Images/IMG-1069.JPG" height="500px" width="400px" alt="Baron Skidmore headshot">
+        <h2 id="about-me">About me</h2>
+        <p>Hello, my name is Baron Skidmore. I am a full stack developer who works in html, CSS, and Javascript. I have a passion to always further my knowledge of languages and how they function.</p>
+        <h2 id="project-link">Projects</h2>
         <article>
-            <section class="section-1">
-                <h3>Horiseon Refactor</h3>
-            </section>
+            <!-- first project link -->
+            <a href="https://iamskidd7.github.io/fun-seo-refactor/" target="_blank">
+                <section class="section-1">
+                    <h3>Horiseon Refactor</h3>
+                </section>
+            </a>
             <section class="section-2">
-                <h3 class="small-projects">About Me Project</h3>
-                <h3 class="small-projects">Form submission</h3>
+                <!-- second project link -->
+                <a class="small-projects" href="https://iamskidd7.github.io/prework-about-me/" target="_blank">
+                    <h3>Personal Webpage</h3>
+                </a>
+                <!-- third project link -->
+                <a class="small-projects" href="https://iamskidd7.github.io/mini-project-01/" target="_blank">
+                    <h3>Form submission</h3>
+                </a>
             </section>
         </article>
 
@@ -47,9 +55,23 @@
 
 
     </main>
-    <!-- <footer>
+    <!-- Added id to footer so you can get to contact info from top of page, also added icons -->
+    <footer id="contact-me">
         <h2>Contact Me</h2>
-    </footer> -->
+        <a href="https://github.com/IAmSkidd7" target="_blank">
+            <img class="icons" src="./assets/Images/github-logo-silhouette-in-a-square.png" alt="Github">
+        </a>
+        <a href="https://www.linkedin.com/in/baron-skidmore-650150231" target="_blank">
+            <img class="icons" src="./assets/Images/linkedin (1).png" alt="Linkedin">
+        </a>
+        <a href="mailto:Baronhockeyplayer@gmail.com">
+            <img class="icons" src="./assets/Images/email.png" alt="Email Me">
+        </a>
+        <a href="#home">
+            <img class="icons" src="./assets/Images/home-icon-silhouette.png" alt="Home Button">
+        </a>
+
+    </footer>
 
 
 </body>
