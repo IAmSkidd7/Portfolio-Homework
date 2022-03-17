@@ -19,7 +19,9 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: #B26E63;
-    padding: 50px 20px
+    padding: 50px 20px;
+    border-bottom: #d2b48c 10px solid;
+    margin-bottom: 10px;
 }
 
 .headshot{
@@ -29,9 +31,16 @@ header{
     padding: 20px 20px;
 }
 
+#project-link { 
+    background-color: #d2b48c;
+    border: #B26E63 dotted;
+}
+
 p{
     text-align: center;
-    padding: 50px 20px;
+    padding: 20px 20px;
+    margin-bottom: 40px;
+
 }
 
 body{
@@ -94,6 +103,13 @@ main{
     text-align: center;
     color: #000;
 }
+
+#about-me {
+    margin-top: 15px;
+    background-color: #d2b48c;
+    border: #B26E63 dotted;
+}
+
 /* added styling and display features to section-1 class */
 .section-1{
     display: flex;
@@ -103,6 +119,7 @@ main{
     padding-top: 75px;
     padding-bottom: 75px;
     margin: 100px;
+    background-color: #d2b48c;
     transition: all 0.3s ease 0s;
     color: #000;
 }
@@ -130,7 +147,7 @@ main{
     padding: 75px;
     width: 33%;
     transition: 0.3s ease;
-    background-color: #CDD7D6;
+    background-color: #d2b48c;
     color: #000;
     margin-top: 25px;
 }
@@ -147,6 +164,7 @@ main{
 /* styled footer */
 footer{
     margin-top: 25px;
+    border-top: #d2b48c 50px;
     font-family: 'montserrat', sans-serif;
     display: flex;
     flex-direction: row;
